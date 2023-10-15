@@ -1,0 +1,56 @@
+.form{
+    margin-top: 15rem;
+}
+
+.form_container{
+    background: var(--blue);
+    padding: 3rem;
+    border-radius: 2rem;
+}
+
+.form_container .top{
+    color: var(--white);
+    width: 100%;
+}
+
+.form_container .top p{
+    color: var(--white);
+    width: 60%;
+}
+
+form{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% auto 20%;
+    gap: 1rem;
+}
+
+form input, textarea{
+    outline: 0;
+    border: 0;
+    height: 4rem;
+    padding: 10px;
+    border-radius: 2rem;
+    color: var(--white);
+    background: var(--primary-light);
+}
+
+textarea{
+    padding: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .form{
+        margin-top: 5rem;
+    }
+
+    .form_container{
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    form{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+:root{
+  --primary: #2773e6;
+  --primary-light: #27a0e65d;
+  --blue: #191ebc;
+  --dark: #2f2f2f;
+  --white: #fff;
+  --grey: #929191;
+
+  --transition: 0.5s ease;
+  --box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body{
+  padding: 0 15%;
+}
+
+section{
+  padding: 2rem  0;
+  margin: 3rem 0;
+}
+
+span{
+  color: var(--primary);
+}
+
+h1{
+  font-size: 3rem;
+}
+
+h3{
+  font-size: 17px;
+  color: var(--blue);
+}
+
+p{
+  color: var(--grey);
+  word-spacing: 2px;
+  line-height: 23px;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  body{
+    padding: 0 7%;
+  }
+  h1{
+    font-size: 2.5rem;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 700px) {
+  body{
+    padding: 0 3%;
   }
-  to {
-    transform: rotate(360deg);
+
+  h1{
+    font-size: 2rem;
+  }
+
+  section{
+    padding: 1.5rem 0;
+    margin: 2rem 0;
   }
 }

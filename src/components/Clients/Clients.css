@@ -1,0 +1,66 @@
+.person img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.person{
+    position: relative;
+    margin: 1rem;
+    width: fit-content;
+    padding: 1rem;
+}
+
+.person .text{
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    border-radius: 1rem;
+    width: 20rem;
+    font-size: 15px;
+    padding: 1rem;
+
+    position: absolute;
+}
+
+.person .text p{
+    color: var(grey);
+}
+
+.person .text h5{
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.people_line{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 5px;
+    width: 100%;
+    background: var(--primary);
+    margin-top: 5rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .people_line{
+        width: 5px;
+        height: 50rem;
+        flex-direction: column;
+        margin-left: 10%;
+    }
+
+    .person .text{
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .person .text{
+        width: 20rem;
+    }
+
+    .people_line{
+        margin-top: 10px;
+    }
+}

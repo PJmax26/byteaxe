@@ -1,0 +1,54 @@
+.whyus_container{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+.why_card{
+    padding: 0.7rem 1rem;
+    margin-bottom: 2rem;
+    width: 25rem;
+    border-radius: 2rem;
+    position: relative;
+}
+
+.why_card::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 60%;
+    background: var(--primary-light);
+    top: 50%;
+    transform: translateY(-50%);
+    left: -5%;
+}
+
+@media  screen and (max-width: 1200px) {
+    .whyus_img img{
+        width: 100%;
+    }
+
+    .why_card{
+        width: 80%;
+    }
+}
+
+@media  screen and (max-width: 700px) {
+    .whyus_img img{
+        width: 70%;
+    }
+
+    .whyus_container{
+        grid-template-columns: 1fr;
+    }
+
+    .why_card{
+        padding: 6px 1rem;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    
+    .why_card::before{
+        left: 0;
+    }
+}
